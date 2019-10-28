@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Forms - wikiUna</title>
+
+  <link rel="icon" href="img/formICON.png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- fonts awesome -->
+  <script src="https://kit.fontawesome.com/f8f0b10b6b.js" crossorigin="anonymous"></script>
+
+  <!-- Main CSS-->
+  <link href="css/criaForms.css" rel="stylesheet" media="all">
+
+
+  <!-- links CSS PRO PERFIL -->
+  <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfil/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfil/animate/animate.css">
+  <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="vendor/perfil/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfil/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/perfil/select2/select2.min.css"> -->
+  <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="vendor/perfil/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/perfil_util.css">
+    <link rel="stylesheet" type="text/css" href="css/perfil.css">
+  <!--===============================================================================================-->
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        UnaForms <i class="fas fa-list-alt"></i>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light" id="painelMain">Painel principal</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" id="criarForms">Criar enquetes</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Pesquisas</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-info" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">FAQ <i class="fas fa-comment-dots"></i></a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User <i class="fas fa-user-astronaut"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#" id="verPerfil" data-toggle="modal" data-target="#modalPERFIL">Perfil</a>
+                <a class="dropdown-item" href="#">Help</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/componente_login/login.html">Sair</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <header class="grad1 py-5" id="headerMain">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-2 mb-2">Bem-vindo</h1>
+                <p class="display-5 text-white mb-2">Ao seu painel de formulários customizados</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div id="areaDeRenderizacao">
+
+        </div>
+
+        
+        
+      </main>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalPERFIL" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <div class="login100-form-title" style="background-image: url(img/bg-01.jpg);">
+            <span class="login100-form-title-1">
+              Perfil
+            </span>
+          </div>
+
+				<form class="login100-form validate-form" method="#">
+					<div class="wrap-input100 validate-input m-b-26" >
+						<span class="label-input100">Nome</span>
+						<input class="input100" type="text" name="username" placeholder="Eduardo Rojas" value="Eduardo Rojas">
+						<span class="focus-input100"></span>
+          </div>
+          
+          <div class="wrap-input100 validate-input m-b-26">
+						<span class="label-input100">E-mail</span>
+						<input class="input100" type="text" name="username" placeholder="edurojas@una.com.br" value="edurojas@una.com.br">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18">
+						<span class="label-input100">Senha</span>
+						<input class="input100" type="password" name="pass" placeholder="Enter password" value="123456789">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Atualizar cadastro
+						</button>
+					</div>
+				</form>
+			  </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ 
+
+  <!-- js perfil -->
+  <!--===============================================================================================-->
+	<script src="vendor/perfil/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/perfil/daterangepicker/moment.min.js"></script>
+    <script src="vendor/perfil/daterangepicker/daterangepicker.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/perfil/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+     <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+  
+      $(document).ready(()=>{
+        $("#areaDeRenderizacao").toggleClass("mt-2")
+  
+        //assim que carregado o documento
+        $("#areaDeRenderizacao").load("/componente_tipos_forms/tipos_forms.html")
+  
+        $("#criarForms").click(()=>{
+          $("#areaDeRenderizacao").load("/componente_criar_form/criarFormulario.html")
+          $("#headerMain").fadeOut()
+          $("#areaDeRenderizacao").toggleClass("mt-2")
+        })
+  
+        $("#painelMain").click(()=>{
+          $("#areaDeRenderizacao").load("/componente_tipos_forms/tipos_forms.html")
+          $("#headerMain").fadeIn()
+          $("#areaDeRenderizacao").toggleClass("mt-2")
+        })
+  
+        // $("#verPerfil").click(()=>{
+        //   $("#modalPERFIL").modal()
+        // })
+      })
+    </script>
+
+</body>
+
+</html>

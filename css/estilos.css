@@ -1,0 +1,18 @@
+.grad1 {
+    height: 250px;
+    width: 100%;
+    background-color: #227093;
+    /* background-image: linear-gradient(141deg, #c7cac9 0%, #227093 51%, #227093 75%); */
+    color: white;
+    opacity: 0.95;
+}
+
+i.fas{
+    font-size: 22px;
+}
+
+.btn-info{
+    background: #227093 !important;
+    color: #fff;
+    border-color: #227093;
+}

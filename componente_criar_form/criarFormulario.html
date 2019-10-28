@@ -1,0 +1,76 @@
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">
+                        Crie seu formulário
+                        <i class="fas fa-pencil-ruler"></i>
+                    </h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Nome da pesquisa / pesquisa" name="name">
+                        </div>
+                        
+
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Descrição da pergunta" name="name">
+                        </div>
+
+                        <!-- <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="class">
+                                    <option disabled="disabled" selected="selected">Tipo de resposta</option>
+                                    <option>Texto</option>
+                                    <option>Box de seleção</option>
+                                    <option>Outros</option>
+                                </select>
+                                <div class="select-dropdown"></div  >
+                            </div>
+                        </div> -->
+
+                        <select class="form-control mb-2 selecaoTypeResp">
+                            <option value="typeResp">Tipo de resposta</option>
+                            <option value="txt">Texto</option>
+                            <option value="boxSelect">Box de seleção</option>
+                            <option value="other">Outros</option>
+                        </select>
+
+                        <textarea id="txtResp" cols="60" rows="3" class="tipo-txtResp form-control" disabled></textarea>
+                        <div class="custom-control mt-2 custom-checkbox my-1 mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                            <label class="custom-control-label mt-1" for="customControlInline">Opção 1</label>
+                            <button class="btnInfo" type="button" id="plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+
+                        <!-- <div class="custom-control mt-2 custom-checkbox my-1 mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlInline2">
+                            <label class="custom-control-label mt-1" for="customControlInline2">Opção 2</label>
+                        </div> -->
+                        
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green" type="button">Criar nova pergunta</button>
+                            <button class="btn btn--radius btn--red" type="button">Salvar formulário</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="/componente_criar_form/js/criaForm.js"></script>
+
+   
+</body><!-- This templates was made by Eduardo Rojas (www.eduardorojas.com.br) -->

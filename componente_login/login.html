@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <link rel="icon" href="/img/formICON.png">
+
+    <!-- CDN Bootstrap -->
+    <link 
+        rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo-login.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+          <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+              <div class="container">
+                <center>
+                  <img src="img/img00.png" class="img-fluid mb-4" width="200" height="100" id="img00">
+                </center>
+                <div class="row">
+                  <div class="col-md-9 col-lg-8 mx-auto">
+                    <h3 class="login-heading mb-4" id="h3X">Bem-vindo à Forms!</h3>
+                    <form>
+                      <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control emailAnimado" placeholder="Digite seu e-mail" required autofocus>
+                        <label for="inputEmail" class="emailAnimado">E-mail</label>
+                      </div>
+      
+                      <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="senhaAnimada form-control" placeholder="Password" required>
+                        <label for="inputPassword" class="senhaAnimada">Password</label>
+                      </div>
+                    </form>
+                    <div id="submisioes">
+                      <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
+                      </div>
+                      <button onclick="window.location.href='/index.html'" class="btn btn-lg btn-info btn-block btn-login text-uppercase font-weight-bold mb-2" type="button">Entrar</button>
+                      <div class="text-center">
+                        <a class="small" href="/componente_esqueceu_senha/senha.html">Esqueceu sua senha?</a> <br>
+                        <a class="small" href="/componente_cadastro/cadastro.html">Cadastre-se</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/animacaoTelas.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
