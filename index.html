@@ -194,16 +194,16 @@
         $("#areaDeRenderizacao").toggleClass("mt-2")
   
         //assim que carregado o documento
-        $("#areaDeRenderizacao").load("/componente_tipos_forms/tipos_forms.html")
+        $("#areaDeRenderizacao").load("componente_tipos_forms/tipos_forms.html")
   
         $("#criarForms").click(()=>{
-          $("#areaDeRenderizacao").load("/componente_criar_form/criarFormulario.html")
+          $("#areaDeRenderizacao").load("componente_criar_form/criarFormulario.html")
           $("#headerMain").fadeOut()
           $("#areaDeRenderizacao").toggleClass("mt-2")
         })
   
         $("#painelMain").click(()=>{
-          $("#areaDeRenderizacao").load("/componente_tipos_forms/tipos_forms.html")
+          $("#areaDeRenderizacao").load("componente_tipos_forms/tipos_forms.html")
           $("#headerMain").fadeIn()
           $("#areaDeRenderizacao").toggleClass("mt-2")
         })
